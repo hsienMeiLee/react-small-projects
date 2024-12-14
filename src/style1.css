@@ -1,0 +1,67 @@
+:root{
+    --yellow : #fff7c8;
+    --pink : #fa709a;
+    --card-bg : #f3ffee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--yellow), var(--pink));
+}
+
+.card{
+    background-color: var(--card-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50rem;
+    height: 30rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-image{
+    background: url("https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 20rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.error{
+    color: red;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.btn-submit{
+    width: 80%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--pink);
+    color: white;
+    font-weight: 700;
+    border: none;
+}
